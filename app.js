@@ -29,7 +29,7 @@ app.get('/shutdown/:computerName', (req, res) => {
         })
     } else {
         const computerName = req.params.computerName + domain
-        const cmd = `"C:\\Program Files\\Veyon\\veyon-cli.exe" feature start ${computerName} ScreenLock`
+        const cmd = `"C:\\Program Files\\Veyon\\veyon-cli.exe" feature start ${computerName} PowerDownNow`
         exec(cmd, (error, stdout, stderr) => {
             if (error || stderr) {
                 console.log(`Błąd przy ${computerName}: ${error ? error.message : stderr}`)
