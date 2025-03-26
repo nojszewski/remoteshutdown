@@ -35,7 +35,7 @@ app.get('/shutdown/:computerName', (req, res) => {
                 console.log(`Błąd przy ${computerName}: ${error ? error.message : stderr}`)
                 return res.send('failed')
             }
-            res.send(`Zablokowano komputer ${computerName}`)
+            res.send(`Wyłączono komputer ${computerName}`)
         })
     }
 })
