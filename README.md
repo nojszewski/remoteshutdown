@@ -1,2 +1,2 @@
-# Remote PC shutdown
-Remote PC shutdown using Veyon CLI.
+# Remote PC management
+Remote PC lock or shutdown using Veyon CLI.
