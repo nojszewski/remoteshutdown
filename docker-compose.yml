@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  app:
+    image: node:20
+    container_name: kompy212
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install && node app.js"
